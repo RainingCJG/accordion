@@ -1,0 +1,120 @@
+/*重置样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul,li{
+	list-style: none;
+}
+
+/*列表容器*/
+.datalist{
+	width: 938px;
+	height: 128px;
+	border: 1px solid #d3d3d3;
+	margin-top: 20px;
+}
+
+.datalist li{
+	float: left;
+	width: 155px;
+	height: 128px;
+	border-right: 1px dashed #cacaca;
+	overflow: hidden;
+}
+
+li.last{
+	border-right: none;
+	margin-right: -1px;
+}
+
+.datalist li a{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/*激活*/
+li.active{
+	width: 314px;
+}
+
+.datalist .active img{
+	width:195px;
+	height:120px;
+	right:0;
+}
+
+.datalist .active h4{
+	font-size: 18px;
+}
+
+.datalist .active .info{
+	font-size: 14px;
+}
+
+.datalist .active .price{
+	font-size: 16px;
+	padding-top: 8px;
+}
+
+.datalist .active .price strong{
+	font-size: 28px;
+}
+
+/*未激活*/
+.datalist img{
+	position: absolute;
+	right: -15px;
+	bottom: 0;
+	width: 117px;
+	height: 72px;
+	border: none;
+}
+
+.datalist h4{
+	position: absolute;
+	top: 1em;
+	left: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ff578a;
+}
+
+.info{
+	position: absolute;
+	top: 3.5em;
+	left: 10px;
+	font-size: 12px;
+	color: #868686;
+}
+
+.price{
+	position: absolute;
+	top: 4em;
+	left: 10px;
+	font-size: 14px;
+	font-style: italic;
+	color: #fa2a5d;
+}
+
+.datalist strong{
+	font-size: 22px;
+	font-family: arial;
+}
+
+/*鼠标移入背景变化*/
+.datalist:hover .mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.2);
+}
